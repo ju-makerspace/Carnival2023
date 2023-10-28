@@ -52,7 +52,7 @@
                 </div>
                 <div class="navigation-links">
                     <a href="#" data-text="HOME" id="home-link" >HOME</a>
-                    <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                    <a href="#about" data-text="ABOUT" id="about-link" >ABOUT</a>
                     <a href="#" data-text="EVENTS" >EVENTS</a>
                     <!-- <a href="#" data-text="SPEAKERS" id="contact-link" >SPEAKERS</a>
                     <a href="#" data-text="SPONSORS" id="home-link" >SPONSORS</a> -->
@@ -116,7 +116,7 @@
                         </div>    
            
 </div></div>
-<hr>  <br clear="all">
+ <br clear="all">
 <!--======================= ABOUT =========================== -->
 
 <!--======================= jecrc about, mks about =========================== -->
@@ -194,18 +194,22 @@
         <div class="about-header">
             Our <span class="color">Events</span>
             <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+            <button style="padding: 10px; margin: 0px;">ABCD</button> <button>XYZ</button>
         <!-- </div>
         <div class=""> -->
             <!-- <br clear> -->
             <div class="program_details_area detials_bg_1 overlay2">
                 <div class="container">
                     <div class="row">
+                 
                         <div class="col-lg-12">
                             <div class="section_title text-center mb-80  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                              
                                 <!-- <h3>Program Details</h3> -->
                             </div>
                         </div>
                     </div>
+            
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="program_detail_wrap">
@@ -400,18 +404,20 @@
             <br  clear >
     <!-- speakers  -->
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="column">
           <div class="card">
-            <img class="speaker-img" src="images/download.jpeg" alt="" srcset="">
+            <img class="speaker-img" src="images/download.jpeg" alt="" srcset=""> -->
             <!-- <div class="middle">
                 <div class="text">John Doe</div>
               </div> -->
+<!-- 
+     
           </div>
    
-        </div>
+        </div> -->
       
-        <div class="column">
+        <!-- <div class="column">
           <div class="card">
             <img class="speaker-img" src="images/download.jpeg" alt="" srcset="">
           </div>
@@ -428,51 +434,129 @@
             <img class="speaker-img" src="images/download.jpeg" alt="" srcset="">
           </div>
         </div>
+      </div> -->
+
+
+<div class="row">
+  <div class="column">
+      <div class="example ">
+        <img src="images/download.jpeg" class="speaker-img"  alt="tree" />
+        <div class="content">
+          <div class="text" style="font-size: 26px;">Krishna Mohan<br><h6>Student</h6></div>
+ 
+        </div>
+      </div> </div>
+
+
+      <div class="column">
+      <div class="example">
+        <img src="images/download.jpeg" class="speaker-img"  alt="tree" />
+        <div class="content">
+          <div class="text" style="font-size: 26px;">Hello<br><h6>Second heading</h6></div>
+        </div>
+      </div>
       </div>
 
 
+      <div class="column">
+        <div class="example">
+          <img src="images/download.jpeg" class="speaker-img"  alt="tree" />
+          <div class="content">
+            <div class="text" style="font-size: 26px;">Hello<br><h6>Second heading</h6></div>
+          </div>
+        </div>
+        </div>
+
+<!-- 
+        <div class="column">
+          <div class="example">
+            <img src="images/download.jpeg" class="speaker-img"  alt="tree" />
+            <div class="content">
+              <div class="text" style="font-size: 26px;">Hello<br><h6>Second heading</h6></div>
+            </div>
+          </div>
+          </div> -->
+
+
+
+      </div>
+
+
+
+      
+
             <style>
+
+.example {
+        position: relative;
+        padding: 0;
+        width: 280px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        margin-left: 20%;
+        border: 1px solid black;
+
+      }
+      .content {
+        opacity: 0;
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        /* margin-left: 10%; */
+        left: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 300px;
+        height: 300px;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        transition: all 400ms ease-out;
+        text-align: center;
+      }
+      .example .content:hover {
+        opacity: 1;
+        /* margin-left: 10%; */
+      }
+      .example .content .text {
+        height: 0;
+        opacity: 1;
+        left: 0;
+        transition-delay: 0s;
+        transition-duration: 0.4s;
+      }
+      .example .content:hover .text {
+        opacity: 1;
+        left: 0;
+        transform: translateY(150px);
+        -webkit-transform: translateY(150px);
+        
+      }
+
+
+
 .speaker-img {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
+  /* margin-left: 10%; */
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-.card:hover .speaker-img {
-  opacity: 0.3;
-}
-
-.card:hover .middle {
-  opacity: 1;
-}
-
-.middle .text {
-  background-color: #04AA6D;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px ;
-}
 
 
 
 .column {
   float: left;
-  width: 25%;
+  width: 29%;
   padding: 0 10px;
+  margin: 10px;
+  margin-top: 80px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -492,15 +576,20 @@
     display: block;
     margin-bottom: 20px;
   }
+  .example {
+        position: relative;
+        padding: 0;
+        width: 280px;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        margin-left: 08%;
+        border: 1px solid black;
+      }
+
+  
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
             </style>
 
 
@@ -816,15 +905,169 @@
                 </ul>
               </div>
             </section>
-          </div>
-        </div>
-        </div>
-<!--======================= footer  =========================== -->
 
+<!--======================= FAQS  =========================== -->
+<div id="about">
+  <!--about content-->
+  <div id="about-content">
+      <div class="about-header">
+           Frequently Asked <span class="color">Questions</span>
+          <!-- <span class ="header-caption"> <span class="color"> FAQs</span></span> -->
+          <br clear="all"><br>   
+
+<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 24 24" id="expand-more">
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="close">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+  </svg>
+</div>
+
+<details open>
+  <summary>
+    Does this product have what I need?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam doloremque sint fugit nisi architecto voluptates corporis harum delectus. Fugit minima error incidunt consectetur labore. Mollitia, exercitationem. Illum, dicta aliquid?</p>
+</details>
+
+<details>
+  <summary>
+    Does this product have what I need?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam doloremque sint fugit nisi architecto voluptates corporis harum delectus. Fugit minima error incidunt consectetur labore. Mollitia, exercitationem. Illum, dicta aliquid?</p>
+</details>
+
+
+<details >
+  <summary>
+    Does this product have what I need?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam doloremque sint fugit nisi architecto voluptates corporis harum delectus. Fugit minima error incidunt consectetur labore. Mollitia, exercitationem. Illum, dicta aliquid?</p>
+</details>
+
+
+<details >
+  <summary>
+    Does this product have what I need?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam doloremque sint fugit nisi architecto voluptates corporis harum delectus. Fugit minima error incidunt consectetur labore. Mollitia, exercitationem. Illum, dicta aliquid?</p>
+</details>
+
+
+<details >
+  <summary>
+    Does this product have what I need?
+    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+  </summary>
+  <p style="text-align: left;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam doloremque sint fugit nisi architecto voluptates corporis harum delectus. Fugit minima error incidunt consectetur labore. Mollitia, exercitationem. Illum, dicta aliquid?</p>
+</details>
+
+
+
+
+
+
+
+ </div></div></div>
+<style>
+details p {text-align: left; font-size: 16px; margin-top: 10px}
+
+@media screen and (max-width: 600px) {
+summary{font-size: 18px;}
+  
+}
+  details {
+  width: 100%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 25px 25px 15px 25px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0  ,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #1c1c1c;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* box-shadow: 0 0 0 5px ; */
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: #c70039;
+  transition: .3s ease-in;
+  pointer-events: none;
  
+}
 
+.control-icon-close {
+  display: none;
+}
 
-<!--=======================why should you join this carnival =========================== -->
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease-in;
+  
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+</style>
+
+<!--======================= why should you join this carnival =========================== -->
 
 
 
