@@ -2967,5 +2967,10 @@
     color: #24262b;
     background-color: #ffffff;
   } */
-  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="copyright"] {
+      padding-left: 60px;
+    }
+  }
   
