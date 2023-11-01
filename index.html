@@ -155,7 +155,7 @@
 
                       <div class="about-main">
                         <!-- about picture -->
-                        <div class="about-img">
+                        <div class="about-img-error">
                             <img src="images/stars.jpg" alt="Your Image">
                         </div>
                         <div class="about-first-paragraph wow">
@@ -166,9 +166,32 @@
                             </span>
                             <br>
                             <span class="about-second-line">JECRC University's makerspace, JU Makerspace, is hosting its  carnival called<b>Maker's Carnival</b> with a THEME OF ARTIFICIAL INTELLIGENCE AND SPACE, at JECRC University, Jaipur . The carnival provided an open platform for makers across India to join and showcase their talents . The event was organized by the makers of JU Makerspace and featured a many fun events and games based on AI and SPACE,such as cosmic trail, Robo soccer and many more  where students get chance to showcase their skills.</span>
-                        </div>
+                        </div><div class="about-img2">
+                          <img src="images/stars.jpg" alt="Your Image">
+                      </div>
                     </div>
+<style>
+.about-img2 {
+  display: none;
+ border-radius: 20px;
+}
 
+/* Media query for screens with a maximum width of 768px (typical for phones) */
+@media (max-width: 768px) {
+  .about-img-error {
+      display: none;
+  }
+  .about-img2 {
+      display: block;
+      width: 334px;
+ 
+
+    }
+    .about-img2 img{
+      padding: 30px;
+      border-radius: 40px;
+  }}
+  </style>
 
                     <div class="about-main">
                       <div class="about-first-paragraph wow">
@@ -416,7 +439,7 @@ function showEvents(day) {
     </div>
 
 
-    
+
 <!--======================= speakers =========================== -->
 <div id="about" style="background: url('images/bg3.png') no-repeat; background-size: 30%; ">
     <!--about content-->
@@ -936,8 +959,8 @@ function showEvents(day) {
 
             </section>
             
-            </div></div></div></div>
-
+            </div></div></div></div></div>
+<br clear="all">
 <!--======================= FAQS  =========================== -->
 <div id="about" style=" background: url('../images/bg.jpg');   background-attachment: fixed; background-size: cover; margin: 0px; padding: 0px;">
   <!--about content--> 
