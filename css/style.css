@@ -2941,19 +2941,31 @@
   } */
   .footer-col .social-links .sol_link {
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    height: 35px;
+    width: 35px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
     margin: 10px auto;
     text-align: center;
     line-height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     color: #ffffff;
     transition: all 0.5s ease;
   }
-  .footer-col .social-links .sol_link:hover {
+ 
+    .footer-col .social-links .sol_link :hover { 
+    transform: scale(1.25); 
+    }
+  .social-links{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    gap:14px;
+    margin: 3px 0px 0px 9px ;
+  }
+  /* .footer-col .social-links .sol_link:hover {
     color: #24262b;
     background-color: #ffffff;
-  }
+  } */
   
   
