@@ -79,6 +79,29 @@
       position:relative;
       /* display: block; */
   }
+  .offcenter{
+    padding-left:60px;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="offcenter"] {
+      padding-left: 0px;
+    }
+  }
+  .reveal {
+    height: 100px;
+    width: 100%;
+    position:absolute;
+    display:inline-block;
+    top:280px;
+    left: -35px;
+    /* right:500px; */
+    z-index:3;
+    font-size:larger
+  } 
+   #speaker {
+    padding-right:100px;
+}
   #particles{
       position: absolute;
       top: 0;
@@ -219,7 +242,6 @@
   #navigation-bar img{
       height: 80px;
       position: absolute;
-      ;
       top: 15%;
       left: 2.5%;
       opacity: .8;
@@ -227,7 +249,12 @@
   }
   #navigation-bar img:hover{
       opacity: 1;
-      transform:rotate(-45deg);
+      /* transform:rotate(-45deg); */ 
+  }
+  .nav_logo img{
+    display: inline-block;
+    padding-top:20px;
+    padding-left:10px;
   }
   .header-image img{
       height: 100vh;
