@@ -66,13 +66,20 @@
             <!--Navigator-Fullscreen END-->
               <!--Home Page-->
             <!--Menubar-->
-            <div id="navigation-bar">
-                <a href=""><img src="images/favicon.png" alt="logo"> </a>
-                  <div class="menubar">
+            <!-- width = "220px" height = "10px" style = "width: 140px; height:75px; padding-top: 15px;" -->
+            
+            <div id="navigation-bar" style="position:absolute;">
+              <div class="nav_logo">
+                <a href="">  <img class = "nav_logo" src="images/JU-Logo.png"  alt="logo"> </a>
+              </div>  
+                  
+                <div id="navigation-bar">
+                  <div class="menubar" >
                       <span class="first-span"></span>
                       <span class="second-span"></span>
                       <span class="third-span"></span>
                   </div>
+            </div>
             </div>
             <!--Menubar End-->
               <!--Header-->
@@ -90,6 +97,7 @@
                 <div class="header-content">
                     <div class="header-content-box">
                     <img src="images/mks-logo.png" alt="mks logo" style="width: 300px;">
+                    <div class="offcenter">
                     <div class="firstline"><span class="color"  id="makers-first-line"  >MAKER'S </span>CARNIVAL</div>
               
 
@@ -99,12 +107,13 @@
                 <span class="txt-rotate color" data-period="1200"data-rotate='[ "29th Nov. - 1st Dec.","29th Nov. - 1st Dec.","29th Nov. - 1st Dec.","29th Nov. - 1st Dec."]'></span>
                 <span class="slash">|</span>
             </div>
+          </div>
             <a href="https://forms.gle/32uWsqBi6UavbMNo9" target="_blank" style="text-decoration: none; color : white;">  <button class="day-button" id="button1">General Entry Pass</button></a>
             <a href="https://linktr.ee/makerscarnival" target="_blank" style="text-decoration: none; color : white; ">  <button class="day-button" id="button1">Register</button></a>
             
-            <div class="contact">
-                    <!-- <a href="Tel:+91 9358524849"><img src="images/call.png" alt="phone-pic" class="contactpic" style="width: 30px; padding: 0px;"></a>Your telephone number Id write in place of "#" -->
-                        </div>    
+            <!-- <div class="contact">
+                    <a href="Tel:+91 9358524849"><img src="images/call.png" alt="phone-pic" class="contactpic" style="width: 30px; padding: 0px;"></a>Your telephone number Id write in place of "#"
+                        </div>     -->
                         
            
 </div> </div>
@@ -119,7 +128,7 @@
                     <!--about content-->
                     <div id="about-content">
                         <div class="about-header">
-                            About <span class="color">Us</span>
+                            <b> About <span class="color">Us</span></b>
                             <!-- <span class ="header-caption">Get to Know <span class="color"> us.</span></span> -->
                         </div>
 
@@ -129,10 +138,10 @@
                     <!-- about description -->
                        <span class="about-first-line">
                             About  
-                            <span class="color">JECRC.</span>
+                            <span class="color">JECRC</span>
                              </span>
                              <br>
-                       <span class="about-second-line">JECRC University is known for its strong research culture and close industry linkages . The university is driven by the spirit of innovation-led research, which encompasses subject-specific exploration as well as the contexts of the business environment in which students will operate and perform .</span>
+                       <span class="about-second-line" style="font-size: 22px;">JECRC University is known for its strong research culture and close industry linkages . The university is driven by the spirit of innovation-led research, which encompasses subject-specific exploration as well as the contexts of the business environment in which students will operate and perform .</span>
                       
                     </div>
                     <!-- about picture -->
@@ -151,10 +160,10 @@
                             <!-- about description -->
                             <span class="about-first-line">
                                 About
-                                <span class="color">Makerspace.</span>
+                                <span class="color">Makerspace</span>
                             </span>
                             <br>
-                            <span class="about-second-line">JECRC University's makerspace, known as JU Makerspace, is a vibrant hub for creativity and innovation. Located at JECRC University in Jaipur, it serves as a dynamic platform for makers from all over India to come together and display their talents. One of the standout events hosted by JU Makerspace is the Maker's Carnival, which revolves around the captivating themes of Artificial Intelligence and Space.</span>
+                            <span class="about-second-line"  style="font-size: 22px;">JECRC University's makerspace, known as JU Makerspace, is a vibrant hub for creativity and innovation. Located at JECRC University in Jaipur, it serves as a dynamic platform for makers from all over India to come together and display their talents. One of the standout events hosted by JU Makerspace is the Maker's Carnival, which revolves around the captivating themes of Artificial Intelligence and Space.</span>
                         </div><div class="about-img2">
                           <img src="images/stars.jpg" alt="Your Image">
                       </div>
@@ -187,10 +196,10 @@
                       <!-- about description -->
                          <span class="about-first-line">
                               About  
-                              <span class="color">Team.</span>
+                              <span class="color">Team</span>
                                </span>
                                <br>
-                         <span class="about-second-line">
+                         <span class="about-second-line"  style="font-size: 22px;">
                           The Maker's Carnival at JECRC University's makerspace, JU Makerspace, wouldn't be possible without the dedicated team of makers who organize and bring it to life. Comprising enthusiastic individuals driven by a passion for innovation, this team orchestrates a variety of engaging events and games, including cosmic trail, Robo soccer, and more.</span>
                         
                       </div>
@@ -290,7 +299,7 @@ function showEvents(day) {
                                             <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4>
                                         </div>
                                         <div class="thumb wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                                          <img src="images/project.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                          <img src="images/gallery2.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                         </div>
                                         <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
                                     </div>
@@ -352,7 +361,7 @@ function showEvents(day) {
                                                   <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4>
                                               </div>
                                               <div class="thumb wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                                  <img src="images/project.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                  <img src="images/gallery2.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                               </div>
                                               <!-- <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
                                           </div>
@@ -374,7 +383,7 @@ function showEvents(day) {
                                           <div class="inner_wrap">
                                               <div class="circle_img"></div>
                                               <div class="porgram_top">
-                                                  <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Bomb Defusion</span>
+                                                  <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Bomb Defusal</span>
                                                   <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">2 PM - 4 PM</h4>
                                               </div>
                                               <div class="thumb  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
@@ -713,7 +722,7 @@ function showEvents(day) {
                   <li class="ag-carousel_item">
                     <figure class="ag-carousel_figure">
                       <a href="images/gallery2.jpg" data-fancybox="gallery">
-                        <img src="images/gallery2.jpg" class="ag-carousel_img" alt="Certificates 1"/>
+                        <img src="images/project.jpg" class="ag-carousel_img" alt="Certificates 1"/>
                       </a>
 
                     </figure>
