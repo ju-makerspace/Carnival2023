@@ -77,32 +77,20 @@
             <!--Menubar End-->
               <!--Header-->
               <!--======================= home =========================== -->
-            <div id="homepage">
+            <div id="homepage" style="margin-right: 0px;">
                 <div id="particles"></div>
                   <!--Social Media Links-->
                 <div class="social-media-links">
-                   <a href="https://www.instagram.com/jumakerspace" target="_blank"><img src=" images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
-                    <a href="https://www.linkedin.com/company/ju-makerspace/" target="_blank"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                  <a href="https://www.instagram.com/jumakerspace" target="_blank"><img src="images/instagram(grey).png" style="width: 30px;" class="social-media" alt="instagram-logo"></a>
+                    <a href="https://www.linkedin.com/company/ju-makerspace/" target="_blank"><img src="images/linkedin logo.png" style="width: 30px;" class="social-media" alt="linkedin-logo"></a>
+                    <a href="Mailto:ju.makerspace@jecrcu.edu.in" title = "ju.makerspace@jecrcu.edu.in"><img src="images/mail(grey).png" alt="email-pic" class="contactpic" style="width: 30px; "></a><!--Your email Id write in place of "#"-->
     
                 </div>
                 <!--Social Media Links end-->
                 <div class="header-content">
                     <div class="header-content-box">
                     <img src="images/mks-logo.png" alt="mks logo" style="width: 300px;">
-                    <div class="firstline"><span class="color" style=" text-shadow: 1px 1px 1px #919191,
-                      1px 2px 1px orangered,
-                      1px 3px 1px orangered,
-                      1px 4px 1px orangered,
-                      1px 5px 1px orangered,
-                      1px 6px 1px orangered,
-                      1px 7px 1px orangered,
-                      1px 8px 1px orangered,
-                      1px 9px 1px orangered, 
-                      1px 10px 1px white,
-                  1px 10px 6px rgba(22,16,16,0.4),
-                  1px 18px 10px rgba(16,16,16,0.2),
-                  1px 22px 35px rgba(16,16,16,0.2),
-                  1px 25px 60px rgba(16,16,16,0.4); color: white;" >MAKER'S </span>CARNIVAL</div>
+                    <div class="firstline"><span class="color"  id="makers-first-line"  >MAKER'S </span>CARNIVAL</div>
               
 
 
@@ -112,11 +100,10 @@
                 <span class="slash">|</span>
             </div>
             <a href="https://forms.gle/32uWsqBi6UavbMNo9" target="_blank" style="text-decoration: none; color : white;">  <button class="day-button" id="button1">General Entry Pass</button></a>
-            <a href="https://linktr.ee/makerscarnival" target="_blank" style="text-decoration: none; color : white;">  <button class="day-button" id="button1">Register</button></a>
+            <a href="https://linktr.ee/makerscarnival" target="_blank" style="text-decoration: none; color : white; ">  <button class="day-button" id="button1">Register</button></a>
             
             <div class="contact">
-                    <a href="Mailto:ju.makerspace@jecrcu.edu.in" title = "ju.makerspace@jecrcu.edu.in"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
-                    <a href="Tel:+91 9358524849"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                    <!-- <a href="Tel:+91 9358524849"><img src="images/call.png" alt="phone-pic" class="contactpic" style="width: 30px; padding: 0px;"></a>Your telephone number Id write in place of "#" -->
                         </div>    
                         
            
@@ -570,15 +557,21 @@ function showEvents(day) {
     </div>
 
 <!-- REGISTER -->
-
 <!--======================= speakers =========================== -->
 <div id="about" style="background: url('images/bg3.png') no-repeat; background-size: 30%; ">
     <!--about content-->
+    
     <div id="about-content">
-        <div class="about-header">
-            Our <span class="color">Speakers</span>
+     
+        <div class="about-header" style = "position: relative">
+          <div class="reveal">
+            <p >REVEALING SOON!</p>
+          </div>
+          
+            Our <span id = "speaker" class="color">Speakers</span>
+            
             <!-- <span class ="header-caption">Get to Know <span class="color"> our speakers.</span></span> -->
-            <br  clear >
+
     <!-- speakers  -->
 
     <!-- <div class="row">
@@ -614,7 +607,7 @@ function showEvents(day) {
       </div> -->
 
 
-<div class="row" style = "
+<div class="row" style = " margin-bottom: 0px;
 	-webkit-filter: blur(15px);
 	-moz-filter: blur(15px);
 	-o-filter: blur(15px);
@@ -622,8 +615,8 @@ function showEvents(day) {
 	filter: blur(15px);
 	user-select: none;">
   <div class="column">
-      <div class="example ">
-        <img src="images/man.jpg" class="speaker-img"  height = 800px alt="tree" />
+      <div class="example " >
+        <img id = "first_speaker" src="images/man.jpg" class="speaker-img"  height = 800px alt="tree" />
         <div class="content">
           <div class="text" style="font-size: 26px;">Krishna Mohan<br><h6>Student</h6></div>
         </div>
@@ -632,7 +625,7 @@ function showEvents(day) {
 
       <div class="column">
       <div class="example">
-        <img src="images/man.jpg" class="speaker-img"  alt="tree" />
+        <img  id = "second_speaker" src="images/man.jpg" class="speaker-img"  alt="tree" />
         <div class="content">
           <div class="text" style="font-size: 26px;">Hello<br><h6>Second heading</h6></div>
         </div>
@@ -642,11 +635,11 @@ function showEvents(day) {
 
       <div class="column">
         <div class="example">
-          <img src="images/man.jpg" class="speaker-img"  alt="tree" />
+          <img id = "third_speaker" src="images/man.jpg" class="speaker-img"  alt="tree" />
           <div class="content">
             <div class="text" style="font-size: 26px;">Hello<br><h6>Second heading</h6></div>
+            </div>
           </div>
-        </div>
         </div>
 
 <!-- 
@@ -660,7 +653,7 @@ function showEvents(day) {
           </div> -->
 
 
-      </div>
+    <!-- </div> -->
             <style>
 
 .example {
@@ -771,6 +764,7 @@ function showEvents(day) {
 
 </div></div></div>
 
+
 <!--======================= sponsors =========================== -->
  <!-- <div id="about" style="margin-bottom: 0px;" > -->
     <!-- about content -->
@@ -811,14 +805,14 @@ function showEvents(day) {
               </div> -->
 
 <!--======================= past events gallery =========================== -->
-<div id="about" id="pastevent" style="margin-top: 0px;">
+<div id="about" id="pastevent" >
   <!--about content-->
-      <div class="about-header">
+      <div class="about-header" >
           <!-- <span class ="header-caption">Get to Know <span class="color"> our speakers.</span></span> -->
+         
 
 
-
-            <section class="ag-carousel-block" >
+            <section class="ag-carousel-block" id = "galleryPadding" >
               <div class="ag-format-container">
 
                 <div class="ag-carousel_title-box">
