@@ -263,7 +263,7 @@
       z-index: 2;
       text-align: center;
       height: auto;
-      padding-right: 60px;
+      /* padding-right: 60px; */
       width: auto;
   
   }
@@ -3054,6 +3054,9 @@
         1px 25px 60px rgba(16,16,16,0.4);
           
   
+    }
+   .header-content .secondline{
+        font-size: 20px;
     }
 }
   
