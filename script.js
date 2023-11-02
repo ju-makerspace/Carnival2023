@@ -79,7 +79,7 @@ function reveal_up() {
   }
 }
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll(".reveal-f");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
