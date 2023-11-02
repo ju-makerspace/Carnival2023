@@ -2974,3 +2974,48 @@
     }
   }
   
+  .reveal{
+    position: relative;
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal.active{
+    opacity: 1;
+  }
+
+  .reveal-r{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal-r.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .reveal-l{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal-l.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .reveal-up{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .reveal-up.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
