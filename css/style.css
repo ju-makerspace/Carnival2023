@@ -1846,6 +1846,7 @@
       padding-top: 50px;
       padding-bottom: 40px;
       }
+      
       .portfolio-text{
           width: 90%;
           padding-left: 0%;
@@ -2973,4 +2974,27 @@
       padding-left: 60px;
     }
   }
+  .reveal {
+    height: 100px;
+    width: 100%;
+    position:absolute;
+    display:inline-block;
+    top:280px;
+    left: -35px;
+    /* right:500px; */
+    z-index:3;
+    font-size:larger
+  } 
+   #speaker {
+    padding-right:100px;
+}
+  @media only screen and (max-width: 768px) {
+    .reveal{
+      top:600px;
+     left: 15px;
+    }
+    #speaker{
+        padding-right:0px;
+    }
+}
   
