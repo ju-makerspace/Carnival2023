@@ -2990,11 +2990,15 @@
 }
   @media only screen and (max-width: 768px) {
     .reveal{
-      top:600px;
-     left: 15px;
+    top:340px;
+    left:10px;
+    padding-bottom:0px;
     }
     #speaker{
         padding-right:0px;
+    }
+    #first_speaker,#third_speaker{
+        display:none;
     }
 }
   
