@@ -1846,6 +1846,7 @@
       padding-top: 50px;
       padding-bottom: 40px;
       }
+      
       .portfolio-text{
           width: 90%;
           padding-left: 0%;
@@ -2973,4 +2974,86 @@
       padding-left: 60px;
     }
   }
+  .reveal {
+    height: 100px;
+    width: 100%;
+    position:absolute;
+    display:inline-block;
+    top:280px;
+    left: -35px;
+    /* right:500px; */
+    z-index:3;
+    font-size:larger
+  } 
+   #speaker {
+    padding-right:100px;
+}
+
+#makers-first-line{
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px orangered,
+    1px 3px 1px orangered,
+    1px 4px 1px orangered,
+    1px 5px 1px orangered,
+    1px 6px 1px orangered,
+    1px 7px 1px orangered,
+    1px 8px 1px orangered,
+    1px 9px 1px orangered, 
+    1px 10px 1px white,
+1px 10px 6px rgba(22,16,16,0.4),
+1px 18px 10px rgba(16,16,16,0.2),
+1px 22px 35px rgba(16,16,16,0.2),
+1px 25px 60px rgba(16,16,16,0.4); color: white;
+}
+  @media only screen and (max-width: 768px) {
+    .reveal{
+    top:340px;
+    left:10px;
+    padding-bottom:0px;
+    }
+    #speaker{
+        padding-right:0px;
+    }
+    #first_speaker,#third_speaker{
+        display:none;
+    }
+    #break{
+        display:none;
+    }
+
+    #galleryPadding{
+        padding-top:0px;
+    }
+    .header-content .firstline, #makers-first-line {
+        
+    
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 7vw;
+            line-height: 1;
+            /* color: #ffeba7; */
+            text-align: center;
+            -webkit-text-stroke: 2px black;
+            /* text-stroke: 2px lightgreen; */
+            /* -webkit-text-fill-color: transparent; */
+            /* text-fill-color: transparent; */
+            /* color: transparent; */
+            text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered,
+            1px 2px 1px orangered, 
+            1px 2px 1px white,
+        1px 10px 6px rgba(22,16,16,0.4),
+        1px 18px 10px rgba(16,16,16,0.2),
+        1px 22px 35px rgba(16,16,16,0.2),
+        1px 25px 60px rgba(16,16,16,0.4);
+          
+  
+    }
+}
   
