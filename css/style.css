@@ -3000,5 +3000,12 @@
     #first_speaker,#third_speaker{
         display:none;
     }
+    #break{
+        display:none;
+    }
+
+    #galleryPadding{
+        padding-top:0px;
+    }
 }
   
