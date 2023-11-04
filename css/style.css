@@ -237,7 +237,7 @@
   }
   .logo img:hover{
       opacity: 1;
-      transform: rotate(-45deg);
+      /* transform: rotate(-45deg); */
   }
   #navigation-bar img{
       height: 80px;
