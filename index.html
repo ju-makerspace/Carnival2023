@@ -45,7 +45,7 @@
             <!--Navigator-fullscreen-->
             <div id="navigation-content">
                 <div class="logo">
-                <img src="images/favicon.png" alt="logo">
+                <img src="images/JU-Logo.png" alt="logo">
                 </div>
                 <div class="navigation-close">
                     <span class="close-first"></span>
@@ -54,10 +54,10 @@
                 <div class="navigation-links">
                     <a href="index.html" data-text="HOME" id="home-link" >HOME</a>
                     <a href="#about" data-text="ABOUT" id="about-link" >ABOUT</a>
-                    <a href="#events" data-text="EVENTS" >EVENTS</a>
+                    <a href="#eventsscroll" data-text="EVENTS" >EVENTS</a>
                     <!-- <a href="#" data-text="SPEAKERS" id="contact-link" >SPEAKERS</a>
                     <a href="#" data-text="SPONSORS" id="home-link" >SPONSORS</a> -->
-                    <a href="#register" data-text="REGISTER" id="about-link" > REGISTER </a>
+                    <a href="https://linktr.ee/makerscarnival" data-text="REGISTER" id="about-link" > REGISTER </a>
                     <a href="#pastevent" data-text="PAST EVENTS" >PAST EVENTS </a>
                     <a href="#footer" data-text="CONTACT" id="contact-link" >CONTACT</a>
     
@@ -70,7 +70,7 @@
             
             <div id="navigation-bar" style="position:absolute;">
               <div class="nav_logo">
-                <a href="">  <img class = "nav_logo" src="images/JU-Logo.png"  alt="logo"> </a>
+                <a href="index.html">  <img class = "nav_logo" src="images/JU-Logo.png"  alt="logo"> </a>
               </div>  
                   
                 <div id="navigation-bar">
@@ -110,6 +110,7 @@
           </div>
             <a href="https://forms.gle/32uWsqBi6UavbMNo9" target="_blank" style="text-decoration: none; color : white;">  <button class="day-button" id="button1">General Entry Pass</button></a>
             <a href="https://linktr.ee/makerscarnival" target="_blank" style="text-decoration: none; color : white; ">  <button class="day-button" id="button1">Register</button></a>
+            <a href="#" target="_blank" style="text-decoration: none; color : white; ">  <button class="day-button" id="button1">Rulebook(coming soon)</button></a>
             
             <!-- <div class="contact">
                     <a href="Tel:+91 9358524849"><img src="images/call.png" alt="phone-pic" class="contactpic" style="width: 30px; padding: 0px;"></a>Your telephone number Id write in place of "#"
@@ -123,7 +124,7 @@
 <!--======================= ABOUT =========================== -->
 
 <!--======================= jecrc about, mks about =========================== -->
-                <div id="about" >
+                <div id="about" class="about-bg-img" >
                   <!-- <div style="background-color: hsla(100, 27%, 80%, 0.1)"> -->
                     <!--about content-->
                     <div id="about-content">
@@ -219,12 +220,13 @@
   <div style="background-color: hsla(126, 17%, 100%, 0.10)">
     <!--about content-->
     <div id="about-content">
-        <div class="about-header">
+        <div class="about-header" id="eventsscroll">
             Our <span class="color">Events</span>
             <br>
             <!-- <span class ="header-caption">Get to Know <span class="color"> me.</span></span> -->
             <button class="day-button" id="button1" onclick="showEvents('day1')">Day 1</button>
             <button class="day-button" id="button2" onclick="showEvents('day2')">Day 2</button>
+            <button class="day-button" id="button3" onclick="showEvents('day3')">Fun Events</button>
 
             <style>
               .day-button {
@@ -263,7 +265,7 @@ function showEvents(day) {
         <div class=""> -->
             <!-- <br clear> -->
             <div class="program_details_area detials_bg_1 overlay2">
-                <div class="container">
+                <div class="container" >
                     <div class="row">
                  
                         <div class="col-lg-12">
@@ -495,11 +497,11 @@ function showEvents(day) {
                                           <div class="inner_wrap">
                                               <div class="circle_img"></div>
                                               <div class="porgram_top reveal-l">
-                                                  <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Robo Sumo, Make it Break it </span>
+                                                  <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Robo Sumo </span>
                                                   <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">12 PM - 1 PM</h4>
                                               </div>
                                               <div class="thumb wow fadeInRight reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
-                                                <img src="images/make it.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                <img src="images/robo_sumo.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                               </div>
                                               <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
                                           </div>
@@ -525,30 +527,125 @@ function showEvents(day) {
                                                 <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">4 PM - 6 PM</h4>
                                             </div>
                                             <div class="thumb  wow fadeInUp reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
-                                              <img src="images/event1.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                              <img src="images/capture-flag.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                             </div>
                                             <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
                                         </div>
                                     </div>
-                                    <div class="single_propram">
-                                      <div class="inner_wrap">
-                                          <div class="circle_img"></div>
-                                          <div class="porgram_top reveal-r">
-                                              <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Jamming Session</span>
-                                              <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">6 PM Onwards</h4>
-                                          </div>
-                                          <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
-                                            <img src="images/jamming.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
-                                          </div>
-                                          <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
-                                      </div>
-                                  </div>
+
 
                     
                   </div>
                   
                                       </div>
                                   </div>
+
+<style>
+  .day3{display: none;}
+</style>
+                                  <!-- fun events -->
+
+                                  <div class="row justify-content-center event day3">
+                                    <div class="col-lg-8">
+                                        <div class="program_detail_wrap">
+                                            <div class="single_propram">
+                                                <div class="inner_wrap">
+                                                    <div class="circle_img"></div>
+                                                    <div class="porgram_top reveal-r">
+                                                      
+                                                        <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Make it Break it</span>
+                                                        <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4> -->
+                                                    </div>
+                                                    <div class="thumb wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                        <img src="images/make it.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                    </div>
+                                                    <!-- <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                                </div>
+                                            </div>
+                                            <div class="single_propram">
+                                                <div class="inner_wrap">
+                                                    <div class="circle_img"></div>
+                                                    <div class="porgram_top reveal-l">
+                                                        <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">AR-VR Experience </span>
+                                                        <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">12 PM - 1 PM</h4> -->
+                                                    </div>
+                                                    <div class="thumb wow fadeInRight reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
+                                                      <img src="images/ar.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                    </div>
+                                                    <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                                </div>
+                                            </div>
+                                            <div class="single_propram">
+                                                <div class="inner_wrap">
+                                                    <div class="circle_img"></div>
+                                                    <div class="porgram_top reveal-r">
+                                                        <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">AI Photobooth</span>
+                                                        <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">2 PM - 4 PM</h4> -->
+                                                    </div>
+                                                    <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                      <img src="images/ai-photo.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                    </div>
+                                                    <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                                </div>
+                                            </div>
+                                            <div class="single_propram">
+                                              <div class="inner_wrap">
+                                                  <div class="circle_img"></div>
+                                                  <div class="porgram_top reveal-l">
+                                                      <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Smart Mirror Booth</span>
+                                                      <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">4 PM - 6 PM</h4> -->
+                                                  </div>
+                                                  <div class="thumb  wow fadeInUp reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
+                                                    <img src="images/smart-mirror.jpg " alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                  </div>
+                                                  <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                              </div>
+                                          </div>
+                                          <div class="single_propram">
+                                            <div class="inner_wrap">
+                                                <div class="circle_img"></div>
+                                                <div class="porgram_top reveal-r">
+                                                    <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">3d Printing Stall</span>
+                                                    <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">6 PM Onwards</h4> -->
+                                                </div>
+                                                <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                  <img src="images/3d.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                                </div>
+                                                <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                            </div>
+                                        </div>
+                                        <div class="single_propram">
+                                          <div class="inner_wrap">
+                                              <div class="circle_img"></div>
+                                              <div class="porgram_top reveal-r">
+                                                  <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Drone Exhibition</span>
+                                                  <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">6 PM Onwards</h4> -->
+                                              </div>
+                                              <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                <img src="images/gallery9.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                              </div>
+                                              <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                          </div>
+                                      </div>
+                                        <div class="single_propram">
+                                          <div class="inner_wrap">
+                                              <div class="circle_img"></div>
+                                              <div class="porgram_top reveal-r">
+                                                  <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Jamming Session</span>
+                                                  <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">6 PM Onwards</h4> -->
+                                              </div>
+                                              <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                <img src="images/jamming.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
+                                              </div>
+                                              <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
+                                          </div>
+                                      </div>
+      
+                          
+                        </div>
+                        
+                                            </div>
+                                        </div>
 
 
 
