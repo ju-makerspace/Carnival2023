@@ -237,7 +237,7 @@
   }
   .logo img:hover{
       opacity: 1;
-      transform: rotate(-45deg);
+      /* transform: rotate(-45deg); */
   }
   #navigation-bar img{
       height: 80px;
@@ -3134,4 +3134,18 @@ transition: 1s all ease;
 .reveal-up.active{
 transform: translateY(0);
 opacity: 1;
+}
+
+.about-bg-img{
+    background-image: url(../images/BG7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media(max-width: 768px) {
+    .about-bg-img{
+        background-image: url(../images/BG6.png);
+        background-position: center;
+    }
 }
