@@ -3135,8 +3135,13 @@ form button:hover {
   align-items: center;
   justify-content: center;
 }
+/* .slide-container swiper{
+  display: flex;
+  justify-content: space-between;
+} */
 .slide-container {
-  max-width: 1120px;
+  max-width: 90%;
+  /* justify-content:; */
   width: 100%;
   padding: 40px 0;
 }
@@ -3156,6 +3161,7 @@ form button:hover {
   flex-direction: column;
   align-items: center;
   padding: 10px 14px;
+  gap:10px;
 }
 .image-content {
   position: relative;
