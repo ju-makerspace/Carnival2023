@@ -216,17 +216,17 @@
                <!--Header End-->
 <!--======================= event =========================== -->
 
-<div id="events" style=" background: url('images/bg.jpg');   background-attachment: fixed; background-size: cover;" >
-  <div style="background-color: hsla(126, 17%, 100%, 0.10)">
+<div id="events" style=" background: url('images/BM9.jpg');   background-attachment: fixed; background-size: cover;" >
+  <div> <!-- style="background-color: hsla(126, 17%, 100%, 0.10)*/"> -->
     <!--about content-->
     <div id="about-content">
         <div class="about-header" id="eventsscroll">
             Our <span class="color">Events</span>
             <br>
             <!-- <span class ="header-caption">Get to Know <span class="color"> me.</span></span> -->
-            <button class="day-button" id="button1" onclick="showEvents('day1')">Day 1</button>
-            <button class="day-button" id="button2" onclick="showEvents('day2')">Day 2</button>
-            <button class="day-button" id="button3" onclick="showEvents('day3')">Fun Events</button>
+            <button class="day-button" id="button1" onclick="showEvents1()">Day 1</button>
+            <button class="day-button" id="button2" onclick="showEvents2()">Day 2</button>
+            <button class="day-button" id="button3" onclick="showEvents3()">Fun Events</button>
 
             <style>
               .day-button {
@@ -240,26 +240,54 @@
       background-color: #7b0023;
     }
     
-    .day2 {
-      display: none;
-    }
+    
     
 
             </style>
 
             <script>
-
-function showEvents(day) {
-    const eventContainers = document.querySelectorAll('.event');
-    eventContainers.forEach(container => {
-        container.style.display = 'none';
-    });
-
-    const eventsToShow = document.querySelectorAll(`.${day}`);
-    eventsToShow.forEach(event => {
-        event.style.display = 'block';
-    });
+cur_day = 'day1'
+function showEvents1(){
+  if(cur_day == 'day1'){
+    null;
+  } else{
+    $('#event_' + cur_day).fadeOut(250, function(){
+    $('#event_day1').fadeIn(250);
+    cur_day = 'day1';
+  });
+  }
 }
+function showEvents2(){
+  if(cur_day == 'day2'){
+    null;
+  } else{
+    $('#event_' + cur_day).fadeOut(250, function(){
+    $('#event_day2').fadeIn(250);
+    cur_day = 'day2';
+  });
+  }
+}
+function showEvents3(){
+  if(cur_day == 'day3'){
+    null;
+  } else{
+    $('#event_' + cur_day).fadeOut(250, function(){
+    $('#event_day3').fadeIn(250);
+    cur_day = 'day3';
+  });
+  }
+}
+//function showEvents(day) {
+//    const eventContainers = document.querySelectorAll('.event');
+//    eventContainers.forEach(container => {
+//        container.style.display = 'none';
+//    });
+
+//    const eventsToShow = document.querySelectorAll(`.${day}`);
+//    eventsToShow.forEach(event => {
+//        event.style.display = 'block';
+//    });
+//}
             </script>
         <!-- </div>
         <div class=""> -->
@@ -277,17 +305,17 @@ function showEvents(day) {
                         </div>
                     </div>
             
-                    <div class="row justify-content-center event day1">
+                    <div class="row justify-content-center event day1" id="event_day1">
                         <div class="col-lg-8">
                             <div class="program_detail_wrap">
                                 <div class="single_propram">
                                     <div class="inner_wrap">
                                         <div class="circle_img"></div>
-                                        <div class="porgram_top reveal-r">
+                                        <div class="porgram_top reveal-r slide-ter-right">
                                             <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Inauguration</span>
                                             <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">9 AM - 10 AM</h4>
                                         </div>
-                                        <div class="thumb wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                        <div class="thumb wow fadeInUp reveal-r slide-ter-right" data-wow-duration="1s" data-wow-delay=".5s">
                                             <img src="images/light.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                         </div>
                                         <!-- <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -296,11 +324,11 @@ function showEvents(day) {
                                 <div class="single_propram">
                                     <div class="inner_wrap">
                                         <div class="circle_img"></div>
-                                        <div class="porgram_top reveal-l">
+                                        <div class="porgram_top reveal-l slide-ter-left">
                                             <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Project Expo</span>
                                             <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4>
                                         </div>
-                                        <div class="thumb wow fadeInRight reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
+                                        <div class="thumb wow fadeInRight reveal-l slide-ter-left" data-wow-duration="1s" data-wow-delay=".5s">
                                           <img src="images/gallery2.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                         </div>
                                         <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -398,6 +426,33 @@ function showEvents(day) {
                                 transform: translateY(0);
                                 opacity: 1;
                               }
+                              .slide-ter-right {
+                                position: relative;
+                                animation: slide-right 2s ease;
+                            }
+                    
+                            @keyframes slide-right {
+                                from {
+                                    right: -600px;
+                                }
+                                to {
+                                    right: 0;
+                                }
+                            }
+
+                            .slide-ter-left {
+                                position: relative;
+                                animation: slide-left 2s ease;
+                            }
+                    
+                            @keyframes slide-left {
+                                from {
+                                    left: -600px;
+                                }
+                                to {
+                                    left: 0;
+                                }
+                            }
 
                     </style>
 
@@ -477,17 +532,17 @@ function showEvents(day) {
                     </script>
 <!-- DAY2  -->
 
-                            <div class="row justify-content-center event day2">
+                            <div class="row justify-content-center event day2" id="event_day2" style="display: none;">
                               <div class="col-lg-8">
                                   <div class="program_detail_wrap">
                                       <div class="single_propram">
                                           <div class="inner_wrap">
                                               <div class="circle_img"></div>
-                                              <div class="porgram_top reveal-r">
+                                              <div class="porgram_top reveal-r slide-ter-right">
                                                   <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Project Expo</span>
                                                   <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4>
                                               </div>
-                                              <div class="thumb wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                              <div class="thumb wow fadeInUp reveal-r slide-ter-right" data-wow-duration="1s" data-wow-delay=".5s">
                                                   <img src="images/gallery2.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                               </div>
                                               <!-- <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -496,11 +551,11 @@ function showEvents(day) {
                                       <div class="single_propram">
                                           <div class="inner_wrap">
                                               <div class="circle_img"></div>
-                                              <div class="porgram_top reveal-l">
+                                              <div class="porgram_top reveal-l slide-ter-left">
                                                   <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Robo Sumo </span>
                                                   <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">12 PM - 1 PM</h4>
                                               </div>
-                                              <div class="thumb wow fadeInRight reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
+                                              <div class="thumb wow fadeInRight reveal-l slide-ter-left" data-wow-duration="1s" data-wow-delay=".5s">
                                                 <img src="images/robo_sumo.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                               </div>
                                               <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -540,23 +595,20 @@ function showEvents(day) {
                                       </div>
                                   </div>
 
-<style>
-  .day3{display: none;}
-</style>
                                   <!-- fun events -->
 
-                                  <div class="row justify-content-center event day3">
+                                  <div class="row justify-content-center event day3" id="event_day3" style="display: none;">
                                     <div class="col-lg-8">
                                         <div class="program_detail_wrap">
                                             <div class="single_propram">
                                                 <div class="inner_wrap">
                                                     <div class="circle_img"></div>
-                                                    <div class="porgram_top reveal-r">
+                                                    <div class="porgram_top reveal-r slide-ter-right">
                                                       
                                                         <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Make it Break it</span>
                                                         <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">10 AM Onwards</h4> -->
                                                     </div>
-                                                    <div class="thumb wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                                    <div class="thumb wow fadeInUp reveal-r slide-ter-right" data-wow-duration="1s" data-wow-delay=".5s">
                                                         <img src="images/make it.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                                     </div>
                                                     <!-- <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -565,11 +617,11 @@ function showEvents(day) {
                                             <div class="single_propram">
                                                 <div class="inner_wrap">
                                                     <div class="circle_img"></div>
-                                                    <div class="porgram_top reveal-l">
+                                                    <div class="porgram_top reveal-l slide-ter-left">
                                                         <span class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">AR-VR Experience </span>
                                                         <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">12 PM - 1 PM</h4> -->
                                                     </div>
-                                                    <div class="thumb wow fadeInRight reveal-l" data-wow-duration="1s" data-wow-delay=".5s">
+                                                    <div class="thumb wow fadeInRight reveal-l slide-ter-left" data-wow-duration="1s" data-wow-delay=".5s">
                                                       <img src="images/ar.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                                     </div>
                                                     <!-- <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -617,11 +669,11 @@ function showEvents(day) {
                                         <div class="single_propram">
                                           <div class="inner_wrap">
                                               <div class="circle_img"></div>
-                                              <div class="porgram_top reveal-r">
+                                              <div class="porgram_top reveal-l">
                                                   <span class=" wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">Drone Exhibition</span>
                                                   <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">6 PM Onwards</h4> -->
                                               </div>
-                                              <div class="thumb  wow fadeInUp reveal-r" data-wow-duration="1s" data-wow-delay=".5s">
+                                              <div class="thumb  wow fadeInUp reveal-l  " data-wow-duration="1s" data-wow-delay=".5s">
                                                 <img src="images/gallery9.jpg" alt="" srcset="" style="width: 80%;  box-shadow: 5px 5px 10px black ;">
                                               </div>
                                               <!-- <h4 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Mr. Zosoldos</h4> -->
@@ -662,7 +714,7 @@ function showEvents(day) {
 
 <!-- REGISTER -->
 <!--======================= speakers =========================== -->
-<div id="about" style="background: url('images/bg3.png') no-repeat; background-size: 30%; ">
+<div id="about" class="about-bg-img" ">
     <!--about content-->
     
     <div id="about-content">
@@ -1033,7 +1085,7 @@ function showEvents(day) {
             </div></div></div></div></div>
 <br clear="all">
 <!--======================= FAQS  =========================== -->
-<div id="about" style=" background: url('../images/bg.jpg');   background-attachment: fixed; background-size: cover; margin: 0px; padding: 0px;">
+<div id="about" style=" background: url('images/BM3.jpg');   background-attachment: fixed; background-size: cover; margin: 0px; padding: 0px; margin: -20px;">
   <!--about content--> 
   <div id="about-content" >
       <div class="about-header" >
