@@ -3116,14 +3116,26 @@ form button:hover {
 }
 
 .about-bg-img {
-  background-image: url(../images/BG7.png);
+  /* background-image: url(../images/BG7.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.bg-img1{
+  background-image: url(../images/BG7.png);
+}
+
+.bg-img2{
+  background-image: url(../images/BM3.jpg);
+}
+
+.bg-img3{
+  background-image: url(../images/BM9.jpg);
+}
+
 @media (max-width: 768px) {
-  .about-bg-img {
+  .about-bg-img-change {
     background-image: url(../images/BG6.png);
     background-position: center;
   }
